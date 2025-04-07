@@ -103,41 +103,19 @@ char resultado; //Resultado_das_comparações
     //Comparando cartas
 
     //População
-    printf("A quantidade de habitantes da carta 1: %lu é maior que a quantidade de habitantes da carta 2: %lu?: %lu\n", populacao, populacao2, populacao > populacao2);
-    resultado = populacao > populacao2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
-    
-    //Pontos Turisticos 
-    printf("A quantidade de pontos turisticos da carta 1: %d é maior que a quantidade de pontos turisticos da carta 2: %d?: %d\n", pontos, pontos2, pontos > pontos2);
-    resultado = pontos > pontos2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado);
 
-    //Área em km quadrados 
-    printf("O valor da área em km quadrados da carta 1: %f é maior que a área em km quadrados da carta 2: %f?: %d\n", area, area2, area > area2);
-    resultado = area > area2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
+    printf("Comparando o atributo população das duas cartas!\n");
+    printf("Carta 1 - %s: %lu\n", cidade, populacao);
+    printf("Carta 2 - %s: %lu\n", cidade2, populacao2);
+    printf("No atributo população a carta vencedora foi a carta:\n");
 
-    //PIB
-    printf("O valor do PIB da carta 1: %f é maior que o PIB da carta 2: %f?: %d\n", PIB, PIB2, PIB > PIB2);
-    resultado = PIB > PIB2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
+    if (populacao > populacao2) {
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 2 venceu!\n");
+    }
 
-    //Densidade Populacional 
-    printf("O valor da densidade populacional da carta 1: %.2f é menor que a densidade populacional da carta 2: %.2f?: %d\n", densidade_populacional, densidade_populacional2, densidade_populacional < densidade_populacional2);
-    resultado = densidade_populacional < densidade_populacional2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
-
-    //PIB per capita 
-    printf("O valor do PIB per capita da carta 1: %.2f é maior que o PIB per capita da carta 2: %.2f?: %d\n", PIB_per_capita, PIB_per_capita2, PIB_per_capita > PIB_per_capita2);
-    resultado = PIB_per_capita > PIB_per_capita2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
-
-    //Super poder
-    printf("O valor do super poder da carta 1: %.2f é maior que o super poder da carta 2: %.2f?: %d\n", super_poder, super_poder2, super_poder > super_poder2);
-    resultado = super_poder > super_poder2;
-    printf("A carta que ganhou a comparação nesse requesito foi a carta: %d\n", resultado); 
-
-
+         
 
     return 0;
 
